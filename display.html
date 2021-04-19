@@ -1,0 +1,24 @@
+
+<body onload="setData()">
+<p id="fname"></p><br><br>
+<p id="lname"></p><br><br>
+<p id="pnumber"></p><br><br>
+<p id="email"></p><br><br>
+
+</body>
+
+
+<javascript>
+
+<script>
+function setData(){
+    if(typeof(localStorage) != "undefined"){
+        document.getElementById("fname").innerHTML = localStorage.fname;
+        document.getElementById("lname").innerHTML = localStorage.lname;
+        document.getElementById("pnumber").innerHTML = localStorage.pnumber;
+        document.getElementById("email").innerHTML = localStorage.email;
+    }
+localStorage.clear();
+}
+</script>
+</javascript>
